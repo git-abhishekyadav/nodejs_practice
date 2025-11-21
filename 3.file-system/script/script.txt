@@ -1,0 +1,2 @@
+Hello from the script file
+This is new script appended

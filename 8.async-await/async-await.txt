@@ -1,0 +1,2 @@
+This is file written by async way
+ new line append to async file
