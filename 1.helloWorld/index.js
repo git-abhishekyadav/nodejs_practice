@@ -1,14 +1,13 @@
-console.log("Hello WOrld");
+console.log("Hello WOrld!");
 
-setTimeout(() => {
-    console.log("this code is delayed by 2 sec");
-},2000);
 
-console.log("The code ends");
+const array = [1, 2, 3, 4, 5];  
+const doubledArray = array.map(num => num * 2);
+console.log(doubledArray);  
 
-function subt(a,b) {
-    return a-b;
+
+function greet(name) {
+    return `Hello, ${name}!`;
 }
 
-console.log(subt(20,10));
-
+console.log(greet("Alice"));    
