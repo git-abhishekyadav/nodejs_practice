@@ -1,0 +1,38 @@
+# sudo docker build -t puppeteer-test .
+
+
+# without cache to rebuild the image
+# sudo docker build --no-cache -t puppeteer-test .
+
+
+# to add to the local directory the output file pdf
+# sudo docker run -it -v "${PWD}/pdfs:/app/pdfs" puppeteer-test
+
+
+# to check for the image files
+# sudo docker run -it  puppeteer-test /bin/bash
+
+# to run the code
+# sudo docker run -it --rm puppeteer-test
+
+
+
+# to check for the image files    
+# sudo docker images
+
+# to close the docker 
+# sudo docker rmi puppeteer-test
+
+#sudo docker rmi <image_id>
+
+# to check for the running containers
+# sudo docker ps
+
+# to check for all containers
+# sudo docker ps -a
+
+# to remove all stopped containers
+# sudo docker container prune
+
+# to remove a specific container
+# sudo docker rm <container_id>
