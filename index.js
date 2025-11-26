@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,6 +7,7 @@ const path = require('path');
     console.log('Launching browser...');
     const browser = await puppeteer.launch({
       headless: true,
+        executablePath: process.env.CHROMIUM_PATH,
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
       dumpio:true
     });
